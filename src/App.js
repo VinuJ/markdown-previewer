@@ -24,7 +24,7 @@ function App() {
       <div className='wrapper'>
         <div id='preview'>
           <ReactMarkdown
-            id='preview'
+            id='md'
             className='markdown'
             children={input}
             remarkPlugins={[remarkGfm]}
