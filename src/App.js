@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='wrapper'>
+      <div className='both-wrappers editor-wrapper'>
         <textarea
           id='editor'
           value={input}
@@ -21,15 +21,13 @@ function App() {
         />
       </div>
 
-      <div className='wrapper'>
-        <div id='preview'>
+      <div className='both-wrappers preview-wrapper'>
           <ReactMarkdown
-            id='md'
+            id='preview'
             className='markdown'
             children={input}
             remarkPlugins={[remarkGfm]}
           ></ReactMarkdown>
-        </div>
       </div>
     </div>
   );
